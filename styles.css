@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 header {
@@ -25,13 +26,13 @@ nav a {
 
 section {
     padding: 50px 20px;
+    text-align: center;
 }
 
 #hero {
     background-image: url('images/background-hero.jpg');
     background-size: cover;
     color: white;
-    text-align: center;
     padding: 100px 20px;
 }
 
@@ -41,30 +42,71 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 1.2em;
 }
 
 button:hover {
     background-color: #218838;
 }
 
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phase {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.phase:hover {
+    background-color: #e0e0e0;
+}
+
+.platforms a {
+    margin: 0 20px;
+}
+
+.platforms img {
+    height: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #28a745;
+}
+
 .footer-links a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    header, nav, section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
-
-    button {
-        padding: 15px 30px;
-    }
 }
