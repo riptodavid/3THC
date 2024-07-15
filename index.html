@@ -37,9 +37,9 @@
         <h2>Rewards</h2>
         <p>With 3% THC Token, you earn rewards every 45 minutes! Here's how it works:</p>
         <ul>
-            <li>**Automatic Distribution:** Rewards are automatically distributed to all token holders every 45 minutes.</li>
-            <li>**No Need to Claim:** You don't need to claim your rewards manually; they are sent directly to your wallet.</li>
-            <li>**3% Rewards:** Earn a 3% reward on every transaction, ensuring a steady stream of income.</li>
+            <li><strong>Automatic Distribution:</strong> Rewards are automatically distributed to all token holders every 45 minutes.</li>
+            <li><strong>No Need to Claim:</strong> You don't need to claim your rewards manually; they are sent directly to your wallet.</li>
+            <li><strong>3% Rewards:</strong> Earn a 3% reward on every transaction, ensuring a steady stream of income.</li>
         </ul>
         <p>This system ensures that you continuously earn rewards just by holding 3% THC Tokens in your wallet.</p>
     </section>
@@ -49,33 +49,24 @@
         <img src="charts/tokenomics-chart.png" alt="Tokenomics Chart">
         <p>Our tokenomics is designed to ensure sustainability and growth:</p>
         <ul>
-            <li>**Total Supply:** 1,000,000,000 3% THC Tokens</li>
-            <li>**Liquidity Pool:** 40%</li>
-            <li>**Development Fund:** 20%</li>
-            <li>**Marketing:** 20%</li>
-            <li>**Community Rewards:** 20%</li>
+            <li><strong>Total Supply:</strong> 1,000,000,000 3% THC Tokens</li>
+            <li><strong>Liquidity Pool:</strong> 40%</li>
+            <li><strong>Development Fund:</strong> 20%</li>
+            <li><strong>Marketing:</strong> 20%</li>
+            <li><strong>Community Rewards:</strong> 20%</li>
         </ul>
     </section>
 
     <section id="roadmap">
         <h2>Roadmap</h2>
-        <div class="timeline">
-            <div class="phase" onclick="toggleDetails('phase1')">
-                <h3>Phase 1: Launch</h3>
-                <p id="phase1-details" style="display: none;">Complete website and social media launch. Initial token distribution and listing on exchanges.</p>
-            </div>
-            <div class="phase" onclick="toggleDetails('phase2')">
-                <h3>Phase 2: Growth</h3>
-                <p id="phase2-details" style="display: none;">Expand marketing efforts and partnerships. Increase community engagement through events and promotions.</p>
-            </div>
-            <div class="phase" onclick="toggleDetails('phase3')">
-                <h3>Phase 3: Expansion</h3>
-                <p id="phase3-details" style="display: none;">List on additional exchanges and integrate with more DeFi platforms. Launch staking and farming features.</p>
-            </div>
-            <div class="phase" onclick="toggleDetails('phase4')">
-                <h3>Phase 4: Maturity</h3>
-                <p id="phase4-details" style="display: none;">Achieve widespread adoption and continue development based on community feedback. Regularly update the roadmap to reflect new goals.</p>
-            </div>
+        <div class="roadmap-buttons">
+            <button onclick="showPhase('phase1')">Phase 1: Launch</button>
+            <button onclick="showPhase('phase2')">Phase 2: Growth</button>
+            <button onclick="showPhase('phase3')">Phase 3: Expansion</button>
+            <button onclick="showPhase('phase4')">Phase 4: Maturity</button>
+        </div>
+        <div id="roadmap-details">
+            <!-- Phase details will be displayed here -->
         </div>
     </section>
 
