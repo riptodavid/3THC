@@ -15,8 +15,20 @@ header {
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
 header img {
-    height: 60px;
+    height: 60px; /* Adjust the size as needed */
+    margin-right: 20px;
+}
+
+.logo-text {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
 }
 
 nav a {
