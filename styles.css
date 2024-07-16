@@ -102,6 +102,32 @@ button:hover {
 }
 
 /* Roadmap Styles */
+.background-image {
+    position: relative;
+    background-image: url('images/background.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Tint color and opacity */
+    z-index: 1;
+}
+
+.background-image h2,
+.background-image .roadmap-buttons,
+.background-image #roadmap-details {
+    position: relative;
+    z-index: 2;
+}
+
 .roadmap-buttons {
     display: flex;
     justify-content: center;
