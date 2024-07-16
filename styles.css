@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f0f0f0;
+    background-color: #d4f1d4; /* Light green background */
 }
 
 header {
@@ -49,7 +49,7 @@ section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    background-color: #d4f1d4; /* Light green background */
+    background-color: #e8ffe8; /* Light green background */
 }
 
 section.visible {
