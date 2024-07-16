@@ -12,3 +12,18 @@ function showPhase(phaseId) {
     
     document.getElementById('roadmap-details').innerHTML = `<p>${phases[phaseId]}</p>`;
 }
+
+// Intersection Observer for animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            entry.target.classList.remove('visible');
+        }
+    });
+});
+
+document.querySelectorAll('.animate-on-scroll').forEach(element => {
+    observer.observe(element);
+});
